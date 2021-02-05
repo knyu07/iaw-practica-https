@@ -27,9 +27,6 @@ snap install --classic certbot
 # Ejecutamos el comando certbot
 ln -s /snap/bin/certbot /usr/bin/certbot
 
-# Ejecutamos certbot con apache
-certbot --apache
-
 # Automatizamos la renovación
 certbot --apache -m demo@demo.es --agree-tos -d practicaiaw.ml
 
